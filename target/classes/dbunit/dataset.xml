@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+<!--    <SEEDING CLIENT TABLE>-->
+
+ <tb_user id_UserSuper="1" DISC_USER="C" email="admin@email.com" login="admin" name="Deyse Carneiro" password="Admin123*" status="1" type="1"/>
+    <tb_client id_UserSuper="1" cnpj="69.871.051/0001-95" />
+ <tb_user id_UserSuper="2" DISC_USER="C" email="teste01@email.com" login="Lucas1" name="Lucas Lima" password="Pass123*" status="1" type="2"/>
+    <tb_client id_UserSuper="2" cnpj="49.808.944/0001-89" />
+ <tb_user id_UserSuper="3" DISC_USER="C" email="teste02@email.com" login="Andreza" name="Andreza Carla" password="Pass123*" status="1" type="2"/>
+    <tb_client id_UserSuper="3" cnpj="94.444.303/0001-47" />
+ <tb_user id_UserSuper="4" DISC_USER="C" email="teste03@email.com" login="Anna" name="Anna Júlia" password="Pass123*" status="1" type="2"/>
+    <tb_client id_UserSuper="4" cnpj="62.436.141/0001-09" />
+ <tb_user id_UserSuper="5" DISC_USER="C" email="teste04@email.com" login="André" name="André Luiz Alcantara" password="Pass123*" status="1" type="2"/>
+    <tb_client id_UserSuper="5" cnpj="05.467.642/0001-19" />
+ <tb_user id_UserSuper="6" DISC_USER="C" email="teste05@email.com" login="João" name="João Felipe Oliveira" password="Pass123*" status="1" type="2"/>
+    <tb_client id_UserSuper="6" cnpj="07.326.042/0001-66" />
+ <tb_user id_UserSuper="7" DISC_USER="C" email="teste06@email.com" login="Giulia" name="Giula Motta" password="Pass123*" status="1" type="2"/>
+    <tb_client id_UserSuper="7" cnpj="81.761.791/0001-74" />
+ <tb_user id_UserSuper="8" DISC_USER="C" email="testeInvalido07@email.com" login="Invalido" name="Ricardo Mauricio" password="Pass123*" status="1" type="2"/>
+    <tb_client id_UserSuper="8" cnpj="83.734.364/6324-23" />
+    
+<!--    <SEEDING EMPLOYEE TABLE>-->
+
+ <tb_user id_UserSuper="9" DISC_USER="E" email="admin@email.com" login="Deyse" name="Deyse carneiro" password="Admin123*" status="1" type="1"/>
+    <tb_employee id_UserSuper="9" cpf="315.145.870-09" />
+ <tb_user id_UserSuper="10" DISC_USER="E" email="employee1@email.com" login="employee1" name="Employee 1" password="Pass123*" status="1" type="1"/>
+    <tb_employee  id_UserSuper="10" cpf="325.487.490-02" />
+ <tb_user id_UserSuper="11" DISC_USER="E" email="employee2@email.com" login="employee2" name="Employee 2" password="Pass123*" status="1" type="1"/>
+    <tb_employee  id_UserSuper="11" cpf="845.564.180-03" />
+ <tb_user id_UserSuper="12" DISC_USER="E" email="employee3@email.com" login="employee3" name="Employee 3" password="Pass123*" status="1" type="1"/>
+    <tb_employee id_UserSuper="12" cpf="453.802.650-65" />
+ <tb_user id_UserSuper="13" DISC_USER="E" email="employee4@email.com" login="employee4" name="Employee 4" password="Pass123*" status="1" type="1"/>
+    <tb_employee id_UserSuper="13" cpf="453.802.650-65" />
+ <tb_user id_UserSuper="14" DISC_USER="E" email="employee5@email.com" login="employee5" name="Employee 5" password="Pass123*" status="1" type="1"/>
+    <tb_employee id_UserSuper="14" cpf="453.802.650-65" />
+ <tb_user id_UserSuper="15" DISC_USER="E" email="employee6@email.com" login="employee6" name="Employee 6" password="Pass123*" status="1" type="1"/>
+    <tb_employee id_UserSuper="15" cpf="453.802.650-65" />
+ <tb_user id_UserSuper="16" DISC_USER="E" email="employeeInvalido@email.com" login="employee7" name="Employee 7" password="Pass123*" status="1" type="1"/>
+    <tb_employee id_UserSuper="16" cpf="474.732.222-22" />
+    
+<!--    <SEEDING PROJECT TABLE>-->
+
+
+<tb_project  id="1" name="SYS HOME CARE" responsible="10" deadLine="2019-11-21" beginDate="2020-11-21" id_Client="1" />
+<tb_project  id="2" name="ATAS O2" responsible="11" deadLine="2019-11-21" beginDate="2020-11-21" id_Client="1" />
+<tb_project  id="3" name="ATAS TEMP" responsible="12" deadLine="2019-11-21" beginDate="2020-11-21" id_Client="1" />
+<tb_project  id="4" name="DUCTUM" responsible="13" deadLine="2019-11-21" beginDate="2020-11-21" id_Client="2" />
+<tb_project  id="5" name="QUAESITUM" responsible="14" deadLine="2019-11-21" beginDate="2020-11-21" id_Client="3" />
+<tb_project  id="6" name="EU ATLETA" responsible="15" deadLine="2019-11-21" beginDate="2020-11-21" id_Client="3" />
+<tb_project  id="7" name="INVALIDO" responsible="16" deadLine="2019-11-21" beginDate="2019-05-21" id_Client="5" />
+
+<!--    <SEEDING SOLICITATION TABLE>-->
+
+<tb_solicitation id="1" name="Bug na Tela de Desativar Cliente" type="2" description="Ao tentar desativar um cliente não persiste no banco." status="4" />
+<tb_solicitation id="2" name="Bug na Tela de Adicionar Responsavel" type="2" description="Ao adicionar um cliente ele não aparece na tela, só aparecendo quando se dar refresh na página" status="4"  />
+<tb_solicitation id="3" name="Bug ao Reativar Usuário"  type="2" description="Ao tentar reativar um usuário não persiste no banco." status="1"/>
+<tb_solicitation id="4" name="Criar testes de Banco de Dados" type="1" description="Criar banco de testes" status="1" />
+<tb_solicitation id="5" name="Página Criar Mapa" type="1" description="Eu, como usuário, quero criar um mapa para poder manipular dados." status="2"/>
+<tb_solicitation id="6" name="TESTE" type="1" description="TESTE NAMELESS" status="2"  />
+
+</dataset>

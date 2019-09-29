@@ -1,0 +1,12 @@
+#surefire
+#Sat Sep 28 22:14:28 BRT 2019
+jpda.address=58695
+maven.ext.class.path=C\:\\Program Files\\NetBeans 8.2\\java\\maven-nblib\\netbeans-eventspy.jar
+file.encoding=UTF-8
+jpda.listen=true
+forkMode=once
+user.dir=E\:\\DuctumMaven
+localRepository=C\:\\Users\\Deyse\\.m2\\repository
+test=Entity.ValidatorTest.ClientValidationTest
+basedir=E\:\\DuctumMaven
+maven.surefire.debug=-Xdebug -Xrunjdwp\:transport\=dt_socket,server\=n,address\=58695
