@@ -39,7 +39,7 @@ public class ClientJPQLTest extends GenericTest{
     
     @Test
     public void allActiveClients(){
-        logger.info("Running allClients()");
+        logger.info("Running allActiveClients()");
         TypedQuery<UserSuper> query = em.createQuery(
         "SELECT u FROM UserSuper u WHERE TYPE(u) IN (Client) AND u.status LIKE :status",
          UserSuper.class

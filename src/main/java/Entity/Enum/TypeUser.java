@@ -8,5 +8,7 @@ package Entity.Enum;
 public enum TypeUser {
     
     ADMIN,
-    DEFAULT
+    DEFAULT,
+    CLIENT,
+    EMPLOYEE
 }
