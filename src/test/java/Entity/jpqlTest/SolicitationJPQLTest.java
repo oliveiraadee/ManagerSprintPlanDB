@@ -10,6 +10,7 @@ import java.util.List;
 import javax.persistence.TypedQuery;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 /**
@@ -91,14 +92,15 @@ public class SolicitationJPQLTest extends GenericTest {
     public void solicitationByDescription(){
         logger.info("Running solicitationByDescription");
         TypedQuery<Solicitation> query = em.createQuery(
-        "SELECT s FROM Solicitation s WHERE s.description LIKE :description",
+        "SELECT s FROM Solicitation s WHERE s.description LIKE CONCAT(:description, '%')",
          Solicitation.class
         );
-        query.setParameter("description", "Bug");
+        query.setParameter("description","Ao");
         
         List<Solicitation> solicitations = query.getResultList();
         
             for (Solicitation solicitation : solicitations){
+               assertTrue(solicitation.getDescription().startsWith("Ao"));
                 System.out.println(solicitation);
             }
             

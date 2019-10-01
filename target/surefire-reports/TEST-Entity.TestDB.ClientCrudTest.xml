@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="Entity.TestDB.ClientCrudTest" time="24.488" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="Entity.TestDB.ClientCrudTest" time="9.956" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\bin"/>
@@ -14,6 +14,7 @@
     <property name="user.country" value="BR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
+    <property name="test" value="${packageClassName}"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="C:\Users\Deyse\Desktop\Ductum-V1"/>
     <property name="java.runtime.version" value="1.8.0_191-b12"/>
@@ -29,7 +30,7 @@
     <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar"/>
     <property name="classworlds.conf" value="C:\Program Files\NetBeans 8.2\java\maven\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python27\;C:\Python27\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Python37\Scripts\;C:\Python37\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files (x86)\Lua\5.1;C:\Program Files (x86)\Lua\5.1\clibs;C:\Program Files\Calibre2\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\Deyse\AppData\Roaming\npm;C:\Program Files (x86)\Yarn\bin\;C:\Users\Deyse\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\Deyse\AppData\Local\Programs\Microsoft VS Code\bin;node_modules\npm\bin;C:\Users\Deyse\node_modules;C:\Users\Deyse\AppData\Roaming\npm\node_modules;C:\Users\Deyse\AppData\Local\Yarn\bin;C:\Program Files\Docker Toolbox;C:\Users\Deyse\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Deyse\AppData\Local\GitHubDesktop\bin;C:\Users\Deyse\AppData\Local\Microsoft\WindowsApps;C:\Users\Deyse\AppData\Roaming\npm;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python27\;C:\Python27\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Python37\Scripts\;C:\Python37\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files (x86)\Lua\5.1;C:\Program Files (x86)\Lua\5.1\clibs;C:\Program Files\Calibre2\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\Deyse\AppData\Roaming\npm;C:\Program Files (x86)\Yarn\bin\;C:\Users\Deyse\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\nodejs\;C:\Program Files\Gradle\gradle-5.6.2\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\Deyse\AppData\Local\Programs\Microsoft VS Code\bin;node_modules\npm\bin;C:\Users\Deyse\node_modules;C:\Users\Deyse\AppData\Roaming\npm\node_modules;C:\Users\Deyse\AppData\Local\Yarn\bin;C:\Program Files\Docker Toolbox;C:\Users\Deyse\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Deyse\AppData\Local\GitHubDesktop\bin;C:\Users\Deyse\AppData\Local\Microsoft\WindowsApps;C:\Users\Deyse\AppData\Roaming\npm;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -44,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_191\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=${packageClassName} -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 surefire:test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="pt"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,8 +62,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Entity.TestDB.ClientCrudTest" name="atualizarCliente" time="0.715"/>
-  <testcase classname="Entity.TestDB.ClientCrudTest" name="persistirClient" time="0.242"/>
-  <testcase classname="Entity.TestDB.ClientCrudTest" name="removerClient" time="0.313"/>
-  <testcase classname="Entity.TestDB.ClientCrudTest" name="atualizarClientMerge" time="0.257"/>
+  <testcase classname="Entity.TestDB.ClientCrudTest" name="atualizarCliente" time="0.189"/>
+  <testcase classname="Entity.TestDB.ClientCrudTest" name="persistirClient" time="0.21"/>
+  <testcase classname="Entity.TestDB.ClientCrudTest" name="removerClient" time="0.433"/>
+  <testcase classname="Entity.TestDB.ClientCrudTest" name="atualizarClientMerge" time="0.249"/>
 </testsuite>

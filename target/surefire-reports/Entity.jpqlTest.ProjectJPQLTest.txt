@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Entity.jpqlTest.ProjectJPQLTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.361 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.249 sec
