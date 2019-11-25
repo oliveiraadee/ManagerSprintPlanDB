@@ -1,21 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: Entity.TestDB.ProjectCrudTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.019 sec <<< FAILURE!
-Entity.TestDB.ProjectCrudTest  Time elapsed: 0.064 sec  <<< ERROR!
-Local Exception Stack: 
-Exception [EclipseLink-30005] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.PersistenceUnitLoadingException
-Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: sun.misc.Launcher$AppClassLoader@4aa298b7
-Internal Exception: javax.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.EntityManagerSetupException
-Exception Description: Predeployment of PersistenceUnit [com.mycompany_DuctumMaven_jar_1.0-SNAPSHOTPU] failed.
-Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
-Exception Description: The target entity of the relationship attribute [user] on the class [class Entity.Comment] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
-	at org.eclipse.persistence.exceptions.PersistenceUnitLoadingException.exceptionSearchingForPersistenceResources(PersistenceUnitLoadingException.java:127)
-	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:107)
-	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:177)
-	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
-	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
-	at Entity.TestDB.GenericTest.setUpClass(GenericTest.java:38)
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 23.238 sec <<< FAILURE!
+Entity.TestDB.ProjectCrudTest  Time elapsed: 235.084 sec  <<< ERROR!
+java.lang.RuntimeException: Line 1: A marcação no documento que precede o elemento-raiz deve estar correta.
+	at Entity.TestDB.DbUnitUtil.inserirDados(DbUnitUtil.java:45)
+	at Entity.TestDB.GenericTest.setUpClass(GenericTest.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -38,57 +28,28 @@ Exception Description: The target entity of the relationship attribute [user] on
 	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-Caused by: javax.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.EntityManagerSetupException
-Exception Description: Predeployment of PersistenceUnit [com.mycompany_DuctumMaven_jar_1.0-SNAPSHOTPU] failed.
-Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
-Exception Description: The target entity of the relationship attribute [user] on the class [class Entity.Comment] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
-	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.createPredeployFailedPersistenceException(EntityManagerSetupImpl.java:1954)
-	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:1945)
-	at org.eclipse.persistence.internal.jpa.deployment.JPAInitializer.callPredeploy(JPAInitializer.java:98)
-	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:96)
-	... 26 more
-Caused by: Exception [EclipseLink-28018] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.EntityManagerSetupException
-Exception Description: Predeployment of PersistenceUnit [com.mycompany_DuctumMaven_jar_1.0-SNAPSHOTPU] failed.
-Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
-Exception Description: The target entity of the relationship attribute [user] on the class [class Entity.Comment] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
-	at org.eclipse.persistence.exceptions.EntityManagerSetupException.predeployFailed(EntityManagerSetupException.java:230)
-	... 30 more
-Caused by: Exception [EclipseLink-7214] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.ValidationException
-Exception Description: The target entity of the relationship attribute [user] on the class [class Entity.Comment] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
-	at org.eclipse.persistence.exceptions.ValidationException.unableToDetermineTargetEntity(ValidationException.java:1996)
-	at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.CollectionAccessor.getReferenceClass(CollectionAccessor.java:547)
-	at org.eclipse.persistence.internal.jpa.metadata.accessors.classes.ClassAccessor.addAccessor(ClassAccessor.java:298)
-	at org.eclipse.persistence.internal.jpa.metadata.accessors.classes.ClassAccessor.addAccessorFields(ClassAccessor.java:436)
-	at org.eclipse.persistence.internal.jpa.metadata.accessors.classes.ClassAccessor.addAccessors(ClassAccessor.java:408)
-	at org.eclipse.persistence.internal.jpa.metadata.accessors.classes.ClassAccessor.preProcess(ClassAccessor.java:1215)
-	at org.eclipse.persistence.internal.jpa.metadata.accessors.classes.MappedSuperclassAccessor.preProcess(MappedSuperclassAccessor.java:742)
-	at org.eclipse.persistence.internal.jpa.metadata.accessors.classes.EntityAccessor.preProcess(EntityAccessor.java:617)
-	at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processStage1(MetadataProject.java:1740)
-	at org.eclipse.persistence.internal.jpa.metadata.MetadataProcessor.processORMMetadata(MetadataProcessor.java:575)
-	at org.eclipse.persistence.internal.jpa.deployment.PersistenceUnitProcessor.processORMetadata(PersistenceUnitProcessor.java:585)
-	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:1869)
+Caused by: org.dbunit.dataset.DataSetException: Line 1: A marcação no documento que precede o elemento-raiz deve estar correta.
+	at org.dbunit.dataset.xml.XmlProducer.buildException(XmlProducer.java:182)
+	at org.dbunit.dataset.xml.FlatXmlProducer.produce(FlatXmlProducer.java:373)
+	at org.dbunit.dataset.CachedDataSet.<init>(CachedDataSet.java:97)
+	at org.dbunit.dataset.xml.FlatXmlDataSet.<init>(FlatXmlDataSet.java:110)
+	at org.dbunit.dataset.xml.FlatXmlDataSetBuilder.buildInternal(FlatXmlDataSetBuilder.java:264)
+	at org.dbunit.dataset.xml.FlatXmlDataSetBuilder.build(FlatXmlDataSetBuilder.java:147)
+	at Entity.TestDB.DbUnitUtil.inserirDados(DbUnitUtil.java:42)
+	... 23 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 2; A marcação no documento que precede o elemento-raiz deve estar correta.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:878)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.dbunit.dataset.xml.FlatXmlProducer.produce(FlatXmlProducer.java:365)
 	... 28 more
-Entity.TestDB.ProjectCrudTest  Time elapsed: 0.066 sec  <<< ERROR!
-java.lang.NullPointerException
-	at Entity.TestDB.GenericTest.tearDownClass(GenericTest.java:44)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)

@@ -1,6 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: Entity.ValidatorTest.EmployeeValidationTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 3.639 sec <<< FAILURE!
 persistirEmployeeInvalido(Entity.ValidatorTest.EmployeeValidationTest)  Time elapsed: 0.086 sec  <<< ERROR!
 java.lang.Exception: Unexpected exception, expected<javax.validation.ConstraintViolationException> but was<javax.validation.UnexpectedTypeException>
@@ -124,3 +125,6 @@ Caused by: javax.validation.UnexpectedTypeException: HV000030: No validator coul
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
 	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
 	... 25 more
+=======
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.281 sec
+>>>>>>> 68049a572510c7b827b66bd4b912d1ac0c6c540d

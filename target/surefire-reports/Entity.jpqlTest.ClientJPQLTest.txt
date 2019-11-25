@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
-Test set: Entity.ValidatorTest.SolicitationValidationTest
+Test set: Entity.jpqlTest.ClientJPQLTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 21.01 sec <<< FAILURE!
-Entity.ValidatorTest.SolicitationValidationTest  Time elapsed: 308.043 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 25.738 sec <<< FAILURE!
+Entity.jpqlTest.ClientJPQLTest  Time elapsed: 80.337 sec  <<< ERROR!
 java.lang.RuntimeException: Line 1: A marcação no documento que precede o elemento-raiz deve estar correta.
 	at Entity.ValidatorTest.DbUnitUtil.inserirDados(DbUnitUtil.java:46)
 	at Entity.ValidatorTest.GenericTest.setUpClass(GenericTest.java:39)

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="Entity.jpqlTest.ProjectJPQLTest" time="27.723" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/home/deecarneiro/jdk1.8.0_111/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.111-b14"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/deecarneiro/Ductum-V1"/>
+    <property name="java.runtime.version" value="1.8.0_111-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/home/deecarneiro/jdk1.8.0_111/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="maven.ext.class.path" value="/home/deecarneiro/netbeans-8.2/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/home/deecarneiro/netbeans-8.2/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/home/deecarneiro/jdk1.8.0_111/jre/lib/amd64:/home/deecarneiro/jdk1.8.0_111/jre/lib/i386::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="5.0.0-32-generic"/>
+    <property name="user.home" value="/home/deecarneiro"/>
+    <property name="user.timezone" value="America/Recife"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="deecarneiro"/>
+    <property name="java.class.path" value="/home/deecarneiro/netbeans-8.2/java/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/home/deecarneiro/jdk1.8.0_111/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/home/deecarneiro/netbeans-8.2/java/maven-nblib/netbeans-eventspy.jar test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="pt"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_111"/>
+    <property name="java.ext.dirs" value="/home/deecarneiro/jdk1.8.0_111/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/home/deecarneiro/jdk1.8.0_111/jre/lib/resources.jar:/home/deecarneiro/jdk1.8.0_111/jre/lib/rt.jar:/home/deecarneiro/jdk1.8.0_111/jre/lib/sunrsasign.jar:/home/deecarneiro/jdk1.8.0_111/jre/lib/jsse.jar:/home/deecarneiro/jdk1.8.0_111/jre/lib/jce.jar:/home/deecarneiro/jdk1.8.0_111/jre/lib/charsets.jar:/home/deecarneiro/jdk1.8.0_111/jre/lib/jfr.jar:/home/deecarneiro/jdk1.8.0_111/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/home/deecarneiro/netbeans-8.2/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="Entity.jpqlTest.ProjectJPQLTest" name="Entity.jpqlTest.ProjectJPQLTest" time="27.738">
+    <error message="Line 1: A marcação no documento que precede o elemento-raiz deve estar correta." type="java.lang.RuntimeException">java.lang.RuntimeException: Line 1: A marcação no documento que precede o elemento-raiz deve estar correta.
+	at Entity.ValidatorTest.DbUnitUtil.inserirDados(DbUnitUtil.java:46)
+	at Entity.ValidatorTest.GenericTest.setUpClass(GenericTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: org.dbunit.dataset.DataSetException: Line 1: A marcação no documento que precede o elemento-raiz deve estar correta.
+	at org.dbunit.dataset.xml.XmlProducer.buildException(XmlProducer.java:182)
+	at org.dbunit.dataset.xml.FlatXmlProducer.produce(FlatXmlProducer.java:373)
+	at org.dbunit.dataset.CachedDataSet.&lt;init&gt;(CachedDataSet.java:97)
+	at org.dbunit.dataset.xml.FlatXmlDataSet.&lt;init&gt;(FlatXmlDataSet.java:110)
+	at org.dbunit.dataset.xml.FlatXmlDataSetBuilder.buildInternal(FlatXmlDataSetBuilder.java:264)
+	at org.dbunit.dataset.xml.FlatXmlDataSetBuilder.build(FlatXmlDataSetBuilder.java:147)
+	at Entity.ValidatorTest.DbUnitUtil.inserirDados(DbUnitUtil.java:43)
+	... 23 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 2; A marcação no documento que precede o elemento-raiz deve estar correta.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:878)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.dbunit.dataset.xml.FlatXmlProducer.produce(FlatXmlProducer.java:365)
+	... 28 more
+</error>
+    <system-out>[EL Config]: metadata: 2019-11-24 22:23:22.417--ServerSession(269853881)--Thread(Thread[main,5,main])--The access type for the persistent class [class Entity.Comment] is set to [FIELD].
+[EL Config]: metadata: 2019-11-24 22:23:22.418--ServerSession(269853881)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field user] is being defaulted to: class Entity.Employee.
+[EL Config]: metadata: 2019-11-24 22:23:22.421--ServerSession(269853881)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field responsible] is being defaulted to: class Entity.Employee.
+[EL Config]: metadata: 2019-11-24 22:23:22.421--ServerSession(269853881)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field client] is being defaulted to: class Entity.Client.
+[EL Config]: metadata: 2019-11-24 22:23:22.421--ServerSession(269853881)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field employees] is being defaulted to: class Entity.Employee.
+[EL Config]: metadata: 2019-11-24 22:23:22.422--ServerSession(269853881)--Thread(Thread[main,5,main])--The access type for the persistent class [class Entity.Sprint] is set to [FIELD].
+[EL Config]: metadata: 2019-11-24 22:23:22.422--ServerSession(269853881)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field features] is being defaulted to: class Entity.Feature.
+[EL Config]: metadata: 2019-11-24 22:23:22.422--ServerSession(269853881)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field project] is being defaulted to: class Entity.Project.
+[EL Config]: metadata: 2019-11-24 22:23:22.423--ServerSession(269853881)--Thread(Thread[main,5,main])--The access type for the persistent class [class Entity.Employee] is set to [FIELD].
+[EL Config]: metadata: 2019-11-24 22:23:22.423--ServerSession(269853881)--Thread(Thread[main,5,main])--The access type for the persistent class [class Entity.Meeting] is set to [FIELD].
+[EL Config]: metadata: 2019-11-24 22:23:22.424--ServerSession(269853881)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field sprint] is being defaulted to: class Entity.Sprint.
+[EL Config]: metadata: 2019-11-24 22:23:22.424--ServerSession(269853881)--Thread(Thread[main,5,main])--The access type for the persistent class [class Entity.Feature] is set to [FIELD].
+[EL Config]: metadata: 2019-11-24 22:23:22.425--ServerSession(269853881)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to many mapping element [field comments] is being defaulted to: class Entity.Comment.
+[EL Config]: metadata: 2019-11-24 22:23:22.425--ServerSession(269853881)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field responsible] is being defaulted to: class Entity.Employee.
+[EL Config]: metadata: 2019-11-24 22:23:22.425--ServerSession(269853881)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field reporter] is being defaulted to: class Entity.Employee.
+[EL Config]: metadata: 2019-11-24 22:23:22.427--ServerSession(269853881)--Thread(Thread[main,5,main])--The access type for the persistent class [class Entity.Client] is set to [FIELD].
+[EL Config]: metadata: 2019-11-24 22:23:22.427--ServerSession(269853881)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field solicitations] is being defaulted to: class Entity.Solicitation.
+[EL Config]: metadata: 2019-11-24 22:23:22.427--ServerSession(269853881)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field project] is being defaulted to: class Entity.Project.
+[EL Config]: metadata: 2019-11-24 22:23:22.428--ServerSession(269853881)--Thread(Thread[main,5,main])--The alias name for the entity class [class Entity.Comment] is being defaulted to: Comment.
+[EL Config]: metadata: 2019-11-24 22:23:22.429--ServerSession(269853881)--Thread(Thread[main,5,main])--The column name for element [ID] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 22:23:22.43--ServerSession(269853881)--Thread(Thread[main,5,main])--The alias name for the entity class [class Entity.UserSuper] is being defaulted to: UserSuper.
+[EL Config]: metadata: 2019-11-24 22:23:22.431--ServerSession(269853881)--Thread(Thread[main,5,main])--The alias name for the entity class [class Entity.Project] is being defaulted to: Project.
+[EL Config]: metadata: 2019-11-24 22:23:22.431--ServerSession(269853881)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 22:23:22.432--ServerSession(269853881)--Thread(Thread[main,5,main])--The alias name for the entity class [class Entity.Sprint] is being defaulted to: Sprint.
+[EL Config]: metadata: 2019-11-24 22:23:22.432--ServerSession(269853881)--Thread(Thread[main,5,main])--The column name for element [ID] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 22:23:22.433--ServerSession(269853881)--Thread(Thread[main,5,main])--The alias name for the entity class [class Entity.Employee] is being defaulted to: Employee.
+[EL Config]: metadata: 2019-11-24 22:23:22.433--ServerSession(269853881)--Thread(Thread[main,5,main])--The column name for element [cpf] is being defaulted to: CPF.
+[EL Config]: metadata: 2019-11-24 22:23:22.433--ServerSession(269853881)--Thread(Thread[main,5,main])--The alias name for the entity class [class Entity.Meeting] is being defaulted to: Meeting.
+[EL Config]: metadata: 2019-11-24 22:23:22.434--ServerSession(269853881)--Thread(Thread[main,5,main])--The column name for element [ID] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 22:23:22.434--ServerSession(269853881)--Thread(Thread[main,5,main])--The alias name for the entity class [class Entity.Feature] is being defaulted to: Feature.
+[EL Config]: metadata: 2019-11-24 22:23:22.436--ServerSession(269853881)--Thread(Thread[main,5,main])--The column name for element [ID] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 22:23:22.436--ServerSession(269853881)--Thread(Thread[main,5,main])--The alias name for the entity class [class Entity.Client] is being defaulted to: Client.
+[EL Config]: metadata: 2019-11-24 22:23:22.437--ServerSession(269853881)--Thread(Thread[main,5,main])--The alias name for the entity class [class Entity.Solicitation] is being defaulted to: Solicitation.
+[EL Config]: metadata: 2019-11-24 22:23:22.437--ServerSession(269853881)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 22:23:22.438--ServerSession(269853881)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field client] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 22:23:22.438--ServerSession(269853881)--Thread(Thread[main,5,main])--The source primary key column name for the many to many mapping [field employees] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 22:23:22.439--ServerSession(269853881)--Thread(Thread[main,5,main])--The target primary key column name for the many to many mapping [field employees] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 22:23:22.439--ServerSession(269853881)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field features] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 22:23:22.44--ServerSession(269853881)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field project] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 22:23:22.44--ServerSession(269853881)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field sprint] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 22:23:22.441--ServerSession(269853881)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field comments] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 22:23:22.441--ServerSession(269853881)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field reporter] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 22:23:22.441--ServerSession(269853881)--Thread(Thread[main,5,main])--The source primary key column name for the many to many mapping [field solicitations] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 22:23:22.443--ServerSession(269853881)--Thread(Thread[main,5,main])--The target primary key column name for the many to many mapping [field solicitations] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 22:23:22.444--ServerSession(269853881)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field project] is being defaulted to: ID.
+[EL Info]: 2019-11-24 22:23:22.449--ServerSession(269853881)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd
+[EL Config]: connection: 2019-11-24 22:23:22.449--ServerSession(269853881)--Connection(176376157)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
+	platform=&gt;MySQLPlatform
+	user name=&gt; &quot;root&quot;
+	datasource URL=&gt; &quot;jdbc:mysql://localhost:3306/ductum?useTimezone=true&amp;serverTimezone=America/Sao_Paulo&quot;
+))
+[EL Config]: connection: 2019-11-24 22:23:22.477--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--Connected: jdbc:mysql://localhost:3306/ductum?useTimezone=true&amp;serverTimezone=America/Sao_Paulo
+	User: root@localhost
+	Database: MySQL  Version: 5.7.28-0ubuntu0.18.04.4
+	Driver: MySQL Connector/J  Version: mysql-connector-java-8.0.11 (Revision: 6d4eaa273bc181b4cf1c8ad0821a2227f116fedf)
+[EL Info]: connection: 2019-11-24 22:23:22.482--ServerSession(269853881)--Thread(Thread[main,5,main])--file:/home/deecarneiro/Ductum-V1/target/classes/_com.mycompany_DuctumMaven_jar_1.0-SNAPSHOTPU login successful
+[EL Fine]: sql: 2019-11-24 22:23:22.483--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_CLIENT DROP FOREIGN KEY FK_TB_CLIENT_ID_USER
+[EL Fine]: sql: 2019-11-24 22:23:22.577--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_COMENT DROP FOREIGN KEY FK_TB_COMENT_feature_id
+[EL Fine]: sql: 2019-11-24 22:23:22.645--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_COMENT DROP FOREIGN KEY FK_TB_COMENT_user
+[EL Fine]: sql: 2019-11-24 22:23:22.712--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_EMPLOYEE DROP FOREIGN KEY FK_TB_EMPLOYEE_ID_USER
+[EL Fine]: sql: 2019-11-24 22:23:22.78--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_FEATURE DROP FOREIGN KEY FK_TB_FEATURE_sprint_id
+[EL Fine]: sql: 2019-11-24 22:23:22.848--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_FEATURE DROP FOREIGN KEY FK_TB_FEATURE_reporter
+[EL Fine]: sql: 2019-11-24 22:23:22.963--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_FEATURE DROP FOREIGN KEY FK_TB_FEATURE_responsible
+[EL Fine]: sql: 2019-11-24 22:23:23.194--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_MEETING DROP FOREIGN KEY FK_TB_MEETING_id_Sprint
+[EL Fine]: sql: 2019-11-24 22:23:23.313--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_PROJECT DROP FOREIGN KEY FK_TB_PROJECT_responsible
+[EL Fine]: sql: 2019-11-24 22:23:23.495--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_PROJECT DROP FOREIGN KEY FK_TB_PROJECT_id_Client
+[EL Fine]: sql: 2019-11-24 22:23:23.678--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_SOLICITATION DROP FOREIGN KEY FK_TB_SOLICITATION_id_Project
+[EL Fine]: sql: 2019-11-24 22:23:23.78--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_SPRINT DROP FOREIGN KEY FK_TB_SPRINT_id_Project
+[EL Fine]: sql: 2019-11-24 22:23:23.881--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE client_has_Solicitations DROP FOREIGN KEY FK_client_has_Solicitations_id_Client
+[EL Fine]: sql: 2019-11-24 22:23:24.039--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE client_has_Solicitations DROP FOREIGN KEY FK_client_has_Solicitations_id_Solicitation
+[EL Fine]: sql: 2019-11-24 22:23:24.218--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE project_Has_Employee DROP FOREIGN KEY FK_project_Has_Employee_id_Employee
+[EL Fine]: sql: 2019-11-24 22:23:24.321--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE project_Has_Employee DROP FOREIGN KEY FK_project_Has_Employee_id_Project
+[EL Fine]: sql: 2019-11-24 22:23:24.423--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--DROP TABLE TB_USER
+[EL Fine]: sql: 2019-11-24 22:23:24.558--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--DROP TABLE TB_CLIENT
+[EL Fine]: sql: 2019-11-24 22:23:24.983--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--DROP TABLE TB_COMENT
+[EL Fine]: sql: 2019-11-24 22:23:25.186--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--DROP TABLE TB_EMPLOYEE
+[EL Fine]: sql: 2019-11-24 22:23:25.365--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--DROP TABLE TB_FEATURE
+[EL Fine]: sql: 2019-11-24 22:23:25.547--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--DROP TABLE TB_MEETING
+[EL Fine]: sql: 2019-11-24 22:23:25.683--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--DROP TABLE TB_PROJECT
+[EL Fine]: sql: 2019-11-24 22:23:25.818--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--DROP TABLE TB_SOLICITATION
+[EL Fine]: sql: 2019-11-24 22:23:26.178--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--DROP TABLE TB_SPRINT
+[EL Fine]: sql: 2019-11-24 22:23:26.615--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--DROP TABLE client_has_Solicitations
+[EL Fine]: sql: 2019-11-24 22:23:26.893--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--DROP TABLE project_Has_Employee
+[EL Fine]: sql: 2019-11-24 22:23:27.392--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--DELETE FROM SEQUENCE WHERE SEQ_NAME = SEQ_GEN
+[EL Fine]: sql: 2019-11-24 22:23:27.46--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--CREATE TABLE TB_USER (ID BIGINT NOT NULL, DISC_USER VARCHAR(1), email VARCHAR(255), login VARCHAR(255), name VARCHAR(255), password VARCHAR(255), status INTEGER, type INTEGER, PRIMARY KEY (ID))
+[EL Fine]: sql: 2019-11-24 22:23:27.908--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--CREATE TABLE TB_CLIENT (ID_USER BIGINT NOT NULL, cnpj VARCHAR(255), PRIMARY KEY (ID_USER))
+[EL Fine]: sql: 2019-11-24 22:23:28.277--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--CREATE TABLE TB_COMENT (ID BIGINT AUTO_INCREMENT NOT NULL, content VARCHAR(255), user BIGINT, feature_id BIGINT, PRIMARY KEY (ID))
+[EL Fine]: sql: 2019-11-24 22:23:28.667--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--CREATE TABLE TB_EMPLOYEE (ID_USER BIGINT NOT NULL, CPF VARCHAR(255), PRIMARY KEY (ID_USER))
+[EL Fine]: sql: 2019-11-24 22:23:28.974--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--CREATE TABLE TB_FEATURE (ID BIGINT AUTO_INCREMENT NOT NULL, created DATE, description VARCHAR(255), points INTEGER, title VARCHAR(255), reporter BIGINT, responsible BIGINT, sprint_id BIGINT, PRIMARY KEY (ID))
+[EL Fine]: sql: 2019-11-24 22:23:29.339--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--CREATE TABLE TB_MEETING (ID BIGINT AUTO_INCREMENT NOT NULL, dateMeeting DATE, description VARCHAR(255), timeMeeting TIME, title VARCHAR(255), id_Sprint BIGINT, PRIMARY KEY (ID))
+[EL Fine]: sql: 2019-11-24 22:23:29.664--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--CREATE TABLE TB_PROJECT (ID BIGINT AUTO_INCREMENT NOT NULL, beginDate DATE, deadLine DATE, name VARCHAR(255), id_Client BIGINT, responsible BIGINT, PRIMARY KEY (ID))
+[EL Fine]: sql: 2019-11-24 22:23:30.224--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--CREATE TABLE TB_SOLICITATION (ID BIGINT AUTO_INCREMENT NOT NULL, created DATE, description VARCHAR(255), name VARCHAR(255) NOT NULL, status INTEGER, type INTEGER NOT NULL, updated DATE, id_Project BIGINT, PRIMARY KEY (ID))
+[EL Fine]: sql: 2019-11-24 22:23:30.751--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--CREATE TABLE TB_SPRINT (ID BIGINT AUTO_INCREMENT NOT NULL, identification INTEGER, id_Project BIGINT, PRIMARY KEY (ID))
+[EL Fine]: sql: 2019-11-24 22:23:32.797--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--CREATE TABLE client_has_Solicitations (id_Client BIGINT NOT NULL, id_Solicitation BIGINT NOT NULL, PRIMARY KEY (id_Client, id_Solicitation))
+[EL Fine]: sql: 2019-11-24 22:23:34.22--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--CREATE TABLE project_Has_Employee (id_Project BIGINT NOT NULL, id_Employee BIGINT NOT NULL, PRIMARY KEY (id_Project, id_Employee))
+[EL Fine]: sql: 2019-11-24 22:23:34.77--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_CLIENT ADD CONSTRAINT FK_TB_CLIENT_ID_USER FOREIGN KEY (ID_USER) REFERENCES TB_USER (ID)
+[EL Fine]: sql: 2019-11-24 22:23:35.6--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_COMENT ADD CONSTRAINT FK_TB_COMENT_feature_id FOREIGN KEY (feature_id) REFERENCES TB_FEATURE (ID)
+[EL Fine]: sql: 2019-11-24 22:23:36.327--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_COMENT ADD CONSTRAINT FK_TB_COMENT_user FOREIGN KEY (user) REFERENCES TB_USER (ID)
+[EL Fine]: sql: 2019-11-24 22:23:37.948--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_EMPLOYEE ADD CONSTRAINT FK_TB_EMPLOYEE_ID_USER FOREIGN KEY (ID_USER) REFERENCES TB_USER (ID)
+[EL Fine]: sql: 2019-11-24 22:23:39.6--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_FEATURE ADD CONSTRAINT FK_TB_FEATURE_sprint_id FOREIGN KEY (sprint_id) REFERENCES TB_SPRINT (ID)
+[EL Fine]: sql: 2019-11-24 22:23:40.397--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_FEATURE ADD CONSTRAINT FK_TB_FEATURE_reporter FOREIGN KEY (reporter) REFERENCES TB_USER (ID)
+[EL Fine]: sql: 2019-11-24 22:23:41.315--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_FEATURE ADD CONSTRAINT FK_TB_FEATURE_responsible FOREIGN KEY (responsible) REFERENCES TB_USER (ID)
+[EL Fine]: sql: 2019-11-24 22:23:42.135--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_MEETING ADD CONSTRAINT FK_TB_MEETING_id_Sprint FOREIGN KEY (id_Sprint) REFERENCES TB_SPRINT (ID)
+[EL Fine]: sql: 2019-11-24 22:23:42.905--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_PROJECT ADD CONSTRAINT FK_TB_PROJECT_responsible FOREIGN KEY (responsible) REFERENCES TB_USER (ID)
+[EL Fine]: sql: 2019-11-24 22:23:44.394--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_PROJECT ADD CONSTRAINT FK_TB_PROJECT_id_Client FOREIGN KEY (id_Client) REFERENCES TB_USER (ID)
+[EL Fine]: sql: 2019-11-24 22:23:45.111--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_SOLICITATION ADD CONSTRAINT FK_TB_SOLICITATION_id_Project FOREIGN KEY (id_Project) REFERENCES TB_PROJECT (ID)
+[EL Fine]: sql: 2019-11-24 22:23:45.961--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE TB_SPRINT ADD CONSTRAINT FK_TB_SPRINT_id_Project FOREIGN KEY (id_Project) REFERENCES TB_PROJECT (ID)
+[EL Fine]: sql: 2019-11-24 22:23:47.023--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE client_has_Solicitations ADD CONSTRAINT FK_client_has_Solicitations_id_Client FOREIGN KEY (id_Client) REFERENCES TB_USER (ID)
+[EL Fine]: sql: 2019-11-24 22:23:47.945--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE client_has_Solicitations ADD CONSTRAINT FK_client_has_Solicitations_id_Solicitation FOREIGN KEY (id_Solicitation) REFERENCES TB_SOLICITATION (ID)
+[EL Fine]: sql: 2019-11-24 22:23:48.628--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE project_Has_Employee ADD CONSTRAINT FK_project_Has_Employee_id_Employee FOREIGN KEY (id_Employee) REFERENCES TB_USER (ID)
+[EL Fine]: sql: 2019-11-24 22:23:49.437--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--ALTER TABLE project_Has_Employee ADD CONSTRAINT FK_project_Has_Employee_id_Project FOREIGN KEY (id_Project) REFERENCES TB_PROJECT (ID)
+[EL Fine]: sql: 2019-11-24 22:23:50.065--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--SELECT * FROM SEQUENCE WHERE SEQ_NAME = SEQ_GEN
+[EL Fine]: sql: 2019-11-24 22:23:50.066--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--INSERT INTO SEQUENCE(SEQ_NAME, SEQ_COUNT) values (SEQ_GEN, 0)
+[EL Config]: connection: 2019-11-24 22:23:50.145--ServerSession(269853881)--Connection(1457352442)--Thread(Thread[main,5,main])--disconnect
+[EL Info]: connection: 2019-11-24 22:23:50.146--ServerSession(269853881)--Thread(Thread[main,5,main])--file:/home/deecarneiro/Ductum-V1/target/classes/_com.mycompany_DuctumMaven_jar_1.0-SNAPSHOTPU logout successful
+[EL Config]: connection: 2019-11-24 22:23:50.146--ServerSession(269853881)--Connection(176376157)--Thread(Thread[main,5,main])--disconnect
+</system-out>
+    <system-err>Sun Nov 24 22:23:22 BRT 2019 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 24 22:23:50 BRT 2019 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+</system-err>
+  </testcase>
+</testsuite>
