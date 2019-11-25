@@ -16,7 +16,7 @@ import org.hibernate.validator.constraints.br.CPF;
 @Entity
 @Table(name="TB_EMPLOYEE") 
 @DiscriminatorValue(value = "E")
-@PrimaryKeyJoinColumn(name="id_UserSuper", referencedColumnName = "id_UserSuper")
+@PrimaryKeyJoinColumn(name="ID_USER", referencedColumnName = "ID")
 public class Employee extends UserSuper implements Serializable {
     
     @CPF

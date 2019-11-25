@@ -55,7 +55,7 @@ public class Project implements Serializable {
     private Client client;
     
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "responsible", referencedColumnName = "id_UserSuper")
+    @JoinColumn(name = "responsible", referencedColumnName = "ID")
     private Employee responsible;
     
      

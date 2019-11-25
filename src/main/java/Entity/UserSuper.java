@@ -3,6 +3,8 @@ package Entity;
 
 import Entity.Enum.TypeUser;
 import Entity.Enum.StatusUser;
+import Entity.Validator.ValidateStatusUser;
+import Entity.Validator.ValidateTypeUser;
 import java.io.Serializable;
 import javax.persistence.Access;
 import javax.persistence.AccessType;
@@ -37,7 +39,7 @@ import org.hibernate.validator.constraints.NotBlank;
 public abstract class UserSuper implements Serializable {
     
     @Id
-    @Column(name="id_UserSuper")
+    @Column(name="ID")
     @GeneratedValue(strategy = GenerationType.AUTO)
     protected Long id;
     
@@ -57,13 +59,10 @@ public abstract class UserSuper implements Serializable {
     @Column(name="email")
     private String email;
     
-    @NotNull
-    @Enumerated(EnumType.ORDINAL)
+    @ValidateStatusUser
     @Column(name="status")
     private StatusUser status;
     
-    @NotNull
-    @Enumerated(EnumType.ORDINAL)
     @Column(name="type")
     private TypeUser type;
 

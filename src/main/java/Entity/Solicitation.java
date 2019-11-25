@@ -3,6 +3,8 @@ package Entity;
 
 import Entity.Enum.StatusSolicitation;
 import Entity.Enum.TypeSolicitation;
+import Entity.Validator.ValidateStatusSolicitation;
+import Entity.Validator.ValidateTypeSolicitation;
 import java.io.Serializable;
 import java.util.Calendar;
 import javax.persistence.Access;
@@ -41,7 +43,7 @@ public class Solicitation implements Serializable {
     @Column(name="name", nullable = false)
     private String name;
     
-    @Enumerated(EnumType.ORDINAL)
+    @ValidateTypeSolicitation
     @Column(name="type", nullable = false)
     private TypeSolicitation type; 
     
@@ -51,7 +53,7 @@ public class Solicitation implements Serializable {
     private String description; 
     
     @NotNull
-    @Enumerated(EnumType.ORDINAL)
+    @ValidateStatusSolicitation
     @Column(name="status")
     private StatusSolicitation status;
     

@@ -21,14 +21,14 @@ import org.hibernate.validator.constraints.br.CNPJ;
 @Entity
 @Table(name="TB_CLIENT") 
 @DiscriminatorValue(value = "C")
-@PrimaryKeyJoinColumn(name="id_UserSuper", referencedColumnName = "id_UserSuper")
+@PrimaryKeyJoinColumn(name="ID_USER", referencedColumnName = "ID")
 public class Client extends UserSuper implements Serializable {
     
     @ManyToMany
     @JoinTable(name="client_has_Solicitations", joinColumns=
     {@JoinColumn(name="id_Client")}, inverseJoinColumns=
       {@JoinColumn(name="id_Solicitation")})
-    private List<Solicitation> solicitations;;
+    private List<Solicitation> solicitations;
     
     @NotNull
     @CNPJ 

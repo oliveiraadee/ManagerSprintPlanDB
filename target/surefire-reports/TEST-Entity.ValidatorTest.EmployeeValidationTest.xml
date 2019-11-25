@@ -1,66 +1,309 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="Entity.ValidatorTest.EmployeeValidationTest" time="9.069" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="Entity.ValidatorTest.EmployeeValidationTest" time="3.639" errors="2" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\bin"/>
-    <property name="java.vm.version" value="25.191-b12"/>
+    <property name="sun.boot.library.path" value="/home/deecarneiro/jdk1.8.0_111/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.111-b14"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=";"/>
+    <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="user.script" value=""/>
     <property name="user.country" value="BR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value=""/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="test" value="Entity.ValidatorTest.**.*Test"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="E:\DuctumMaven"/>
-    <property name="java.runtime.version" value="1.8.0_191-b12"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_191\jre\lib\endorsed"/>
+    <property name="user.dir" value="/home/deecarneiro/Ductum-V1"/>
+    <property name="java.runtime.version" value="1.8.0_111-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/home/deecarneiro/jdk1.8.0_111/jre/lib/endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\Deyse\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar"/>
-    <property name="classworlds.conf" value="C:\Program Files\NetBeans 8.2\java\maven\bin\m2.conf"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python27\;C:\Python27\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Python37\Scripts\;C:\Python37\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files (x86)\Lua\5.1;C:\Program Files (x86)\Lua\5.1\clibs;C:\Program Files\Calibre2\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\Deyse\AppData\Roaming\npm;C:\Program Files (x86)\Yarn\bin\;C:\Users\Deyse\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\Deyse\AppData\Local\Programs\Microsoft VS Code\bin;node_modules\npm\bin;C:\Users\Deyse\node_modules;C:\Users\Deyse\AppData\Roaming\npm\node_modules;C:\Users\Deyse\AppData\Local\Yarn\bin;C:\Program Files\Docker Toolbox;C:\Users\Deyse\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Deyse\AppData\Local\GitHubDesktop\bin;C:\Users\Deyse\AppData\Local\Microsoft\WindowsApps;C:\Users\Deyse\AppData\Roaming\npm;."/>
+    <property name="os.name" value="Linux"/>
+    <property name="maven.ext.class.path" value="/home/deecarneiro/netbeans-8.2/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/home/deecarneiro/netbeans-8.2/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/home/deecarneiro/jdk1.8.0_111/jre/lib/amd64:/home/deecarneiro/jdk1.8.0_111/jre/lib/i386::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.0"/>
-    <property name="user.home" value="C:\Users\Deyse"/>
-    <property name="user.timezone" value="America/Sao_Paulo"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="os.version" value="5.0.0-32-generic"/>
+    <property name="user.home" value="/home/deecarneiro"/>
+    <property name="user.timezone" value="America/Recife"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="Deyse"/>
-    <property name="java.class.path" value="C:\Program Files\NetBeans 8.2\java\maven\boot\plexus-classworlds-2.4.jar"/>
+    <property name="user.name" value="deecarneiro"/>
+    <property name="java.class.path" value="/home/deecarneiro/netbeans-8.2/java/maven/boot/plexus-classworlds-2.4.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_191\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 test"/>
+    <property name="java.home" value="/home/deecarneiro/jdk1.8.0_111/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=Entity.ValidatorTest.**.*Test -Dmaven.ext.class.path=/home/deecarneiro/netbeans-8.2/java/maven-nblib/netbeans-eventspy.jar surefire:test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="pt"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_191"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\classes"/>
+    <property name="java.version" value="1.8.0_111"/>
+    <property name="java.ext.dirs" value="/home/deecarneiro/jdk1.8.0_111/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/home/deecarneiro/jdk1.8.0_111/jre/lib/resources.jar:/home/deecarneiro/jdk1.8.0_111/jre/lib/rt.jar:/home/deecarneiro/jdk1.8.0_111/jre/lib/sunrsasign.jar:/home/deecarneiro/jdk1.8.0_111/jre/lib/jsse.jar:/home/deecarneiro/jdk1.8.0_111/jre/lib/jce.jar:/home/deecarneiro/jdk1.8.0_111/jre/lib/charsets.jar:/home/deecarneiro/jdk1.8.0_111/jre/lib/jfr.jar:/home/deecarneiro/jdk1.8.0_111/jre/classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Program Files\NetBeans 8.2\java\maven"/>
-    <property name="file.separator" value="\"/>
+    <property name="maven.home" value="/home/deecarneiro/netbeans-8.2/java/maven"/>
+    <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.desktop" value="windows"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Entity.ValidatorTest.EmployeeValidationTest" name="persistirEmployeeInvalido" time="0.472"/>
-  <testcase classname="Entity.ValidatorTest.EmployeeValidationTest" name="atualizarEmployeeInvalido" time="0.006"/>
+  <testcase classname="Entity.ValidatorTest.EmployeeValidationTest" name="persistirEmployeeInvalido" time="0.086">
+    <error message="Unexpected exception, expected&lt;javax.validation.ConstraintViolationException&gt; but was&lt;javax.validation.UnexpectedTypeException&gt;" type="java.lang.Exception">java.lang.Exception: Unexpected exception, expected&lt;javax.validation.ConstraintViolationException&gt; but was&lt;javax.validation.UnexpectedTypeException&gt;
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:28)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: javax.validation.UnexpectedTypeException: HV000030: No validator could be found for type: Entity.Enum.StatusUser.
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintValidatorManager.verifyResolveWasUnique(ConstraintValidatorManager.java:218)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintValidatorManager.findMatchingValidatorClass(ConstraintValidatorManager.java:193)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintValidatorManager.getInitializedValidator(ConstraintValidatorManager.java:97)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:125)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:91)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:83)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraint(ValidatorImpl.java:547)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:487)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:451)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:403)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:206)
+	at org.eclipse.persistence.internal.jpa.metadata.listeners.BeanValidationListener.validateOnCallbackEvent(BeanValidationListener.java:84)
+	at org.eclipse.persistence.internal.jpa.metadata.listeners.BeanValidationListener.prePersist(BeanValidationListener.java:62)
+	at org.eclipse.persistence.descriptors.DescriptorEventManager.notifyListener(DescriptorEventManager.java:748)
+	at org.eclipse.persistence.descriptors.DescriptorEventManager.notifyEJB30Listeners(DescriptorEventManager.java:691)
+	at org.eclipse.persistence.descriptors.DescriptorEventManager.executeEvent(DescriptorEventManager.java:229)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.registerNewObjectClone(UnitOfWorkImpl.java:4316)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.registerNotRegisteredNewObjectForPersist(UnitOfWorkImpl.java:4293)
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.registerNotRegisteredNewObjectForPersist(RepeatableWriteUnitOfWork.java:518)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.registerNewObjectForPersist(UnitOfWorkImpl.java:4235)
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.persist(EntityManagerImpl.java:496)
+	at Entity.ValidatorTest.EmployeeValidationTest.persistirEmployeeInvalido(EmployeeValidationTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	... 25 more
+</error>
+    <system-out>[EL Config]: connection: 2019-11-24 15:26:03.332--ServerSession(1122297225)--Connection(1841967595)--Thread(Thread[main,5,main])--disconnect
+[EL Info]: connection: 2019-11-24 15:26:03.332--ServerSession(1122297225)--Thread(Thread[main,5,main])--file:/home/deecarneiro/Ductum-V1/target/classes/_com.mycompany_DuctumMaven_jar_1.0-SNAPSHOTPU logout successful
+[EL Config]: connection: 2019-11-24 15:26:03.333--ServerSession(1122297225)--Connection(493310435)--Thread(Thread[main,5,main])--disconnect
+[EL Config]: metadata: 2019-11-24 15:26:03.344--ServerSession(664232848)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [field responsible] is being defaulted to: class Entity.Employee.
+[EL Config]: metadata: 2019-11-24 15:26:03.344--ServerSession(664232848)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field client] is being defaulted to: class Entity.Client.
+[EL Config]: metadata: 2019-11-24 15:26:03.345--ServerSession(664232848)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field employees] is being defaulted to: class Entity.Employee.
+[EL Config]: metadata: 2019-11-24 15:26:03.346--ServerSession(664232848)--Thread(Thread[main,5,main])--The access type for the persistent class [class Entity.Employee] is set to [FIELD].
+[EL Config]: metadata: 2019-11-24 15:26:03.346--ServerSession(664232848)--Thread(Thread[main,5,main])--The access type for the persistent class [class Entity.Client] is set to [FIELD].
+[EL Config]: metadata: 2019-11-24 15:26:03.346--ServerSession(664232848)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to many mapping element [field solicitations] is being defaulted to: class Entity.Solicitation.
+[EL Config]: metadata: 2019-11-24 15:26:03.346--ServerSession(664232848)--Thread(Thread[main,5,main])--The target entity (reference) class for the many to one mapping element [field project] is being defaulted to: class Entity.Project.
+[EL Config]: metadata: 2019-11-24 15:26:03.347--ServerSession(664232848)--Thread(Thread[main,5,main])--The alias name for the entity class [class Entity.UserSuper] is being defaulted to: UserSuper.
+[EL Config]: metadata: 2019-11-24 15:26:03.348--ServerSession(664232848)--Thread(Thread[main,5,main])--The alias name for the entity class [class Entity.Project] is being defaulted to: Project.
+[EL Config]: metadata: 2019-11-24 15:26:03.349--ServerSession(664232848)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 15:26:03.349--ServerSession(664232848)--Thread(Thread[main,5,main])--The alias name for the entity class [class Entity.Employee] is being defaulted to: Employee.
+[EL Config]: metadata: 2019-11-24 15:26:03.35--ServerSession(664232848)--Thread(Thread[main,5,main])--The column name for element [cpf] is being defaulted to: CPF.
+[EL Config]: metadata: 2019-11-24 15:26:03.35--ServerSession(664232848)--Thread(Thread[main,5,main])--The alias name for the entity class [class Entity.Client] is being defaulted to: Client.
+[EL Config]: metadata: 2019-11-24 15:26:03.35--ServerSession(664232848)--Thread(Thread[main,5,main])--The alias name for the entity class [class Entity.Solicitation] is being defaulted to: Solicitation.
+[EL Config]: metadata: 2019-11-24 15:26:03.35--ServerSession(664232848)--Thread(Thread[main,5,main])--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 15:26:03.351--ServerSession(664232848)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field client] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 15:26:03.351--ServerSession(664232848)--Thread(Thread[main,5,main])--The source primary key column name for the many to many mapping [field employees] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 15:26:03.352--ServerSession(664232848)--Thread(Thread[main,5,main])--The target primary key column name for the many to many mapping [field employees] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 15:26:03.352--ServerSession(664232848)--Thread(Thread[main,5,main])--The source primary key column name for the many to many mapping [field solicitations] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 15:26:03.352--ServerSession(664232848)--Thread(Thread[main,5,main])--The target primary key column name for the many to many mapping [field solicitations] is being defaulted to: ID.
+[EL Config]: metadata: 2019-11-24 15:26:03.352--ServerSession(664232848)--Thread(Thread[main,5,main])--The primary key column name for the mapping element [field project] is being defaulted to: ID.
+[EL Info]: 2019-11-24 15:26:03.356--ServerSession(664232848)--Thread(Thread[main,5,main])--EclipseLink, version: Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd
+[EL Config]: connection: 2019-11-24 15:26:03.356--ServerSession(664232848)--Connection(1917579871)--Thread(Thread[main,5,main])--connecting(DatabaseLogin(
+	platform=&gt;MySQLPlatform
+	user name=&gt; &quot;root&quot;
+	datasource URL=&gt; &quot;jdbc:mysql://localhost:3306/ductum?useTimezone=true&amp;serverTimezone=America/Sao_Paulo&quot;
+))
+[EL Config]: connection: 2019-11-24 15:26:03.369--ServerSession(664232848)--Connection(67573741)--Thread(Thread[main,5,main])--Connected: jdbc:mysql://localhost:3306/ductum?useTimezone=true&amp;serverTimezone=America/Sao_Paulo
+	User: root@localhost
+	Database: MySQL  Version: 5.7.28-0ubuntu0.18.04.4
+	Driver: MySQL Connector/J  Version: mysql-connector-java-8.0.11 (Revision: 6d4eaa273bc181b4cf1c8ad0821a2227f116fedf)
+[EL Info]: connection: 2019-11-24 15:26:03.372--ServerSession(664232848)--Thread(Thread[main,5,main])--file:/home/deecarneiro/Ductum-V1/target/classes/_com.mycompany_DuctumMaven_jar_1.0-SNAPSHOTPU login successful
+[EL Fine]: sql: 2019-11-24 15:26:03.376--ServerSession(664232848)--Connection(67573741)--Thread(Thread[main,5,main])--SELECT * FROM SEQUENCE WHERE SEQ_NAME = SEQ_GEN
+[EL Fine]: sql: 2019-11-24 15:26:06.886--ClientSession(1600869357)--Connection(67573741)--Thread(Thread[main,5,main])--UPDATE SEQUENCE SET SEQ_COUNT = SEQ_COUNT + ? WHERE SEQ_NAME = ?
+	bind =&gt; [50, SEQ_GEN]
+[EL Fine]: sql: 2019-11-24 15:26:06.888--ClientSession(1600869357)--Connection(67573741)--Thread(Thread[main,5,main])--SELECT SEQ_COUNT FROM SEQUENCE WHERE SEQ_NAME = ?
+	bind =&gt; [SEQ_GEN]
+</system-out>
+    <system-err>Sun Nov 24 15:26:03 BRT 2019 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Sun Nov 24 15:26:03 BRT 2019 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+nov 24, 2019 3:26:06 PM org.hibernate.validator.internal.engine.messageinterpolation.InterpolationTerm interpolateExpressionLanguageTerm
+WARN: HV000129: EL expression &apos;${value}&apos; references an unknown property
+javax.el.PropertyNotFoundException: Cannot find property value
+	at org.hibernate.validator.internal.engine.messageinterpolation.el.RootResolver.getValue(RootResolver.java:64)
+	at javax.el.CompositeELResolver.getValue(CompositeELResolver.java:188)
+	at com.sun.el.parser.AstIdentifier.getValue(AstIdentifier.java:103)
+	at com.sun.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:224)
+	at org.hibernate.validator.internal.engine.messageinterpolation.InterpolationTerm.interpolateExpressionLanguageTerm(InterpolationTerm.java:112)
+	at org.hibernate.validator.internal.engine.messageinterpolation.InterpolationTerm.interpolate(InterpolationTerm.java:90)
+	at org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator.interpolateExpression(ResourceBundleMessageInterpolator.java:342)
+	at org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator.interpolateMessage(ResourceBundleMessageInterpolator.java:298)
+	at org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator.interpolate(ResourceBundleMessageInterpolator.java:182)
+	at org.hibernate.validator.internal.engine.ValidationContext.interpolate(ValidationContext.java:362)
+	at org.hibernate.validator.internal.engine.ValidationContext.createConstraintViolation(ValidationContext.java:271)
+	at org.hibernate.validator.internal.engine.ValidationContext.createConstraintViolations(ValidationContext.java:232)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateSingleConstraint(ConstraintTree.java:291)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:133)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateComposingConstraints(ConstraintTree.java:233)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:102)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:91)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:83)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraint(ValidatorImpl.java:547)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:487)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:451)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:403)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:206)
+	at org.eclipse.persistence.internal.jpa.metadata.listeners.BeanValidationListener.validateOnCallbackEvent(BeanValidationListener.java:84)
+	at org.eclipse.persistence.internal.jpa.metadata.listeners.BeanValidationListener.prePersist(BeanValidationListener.java:62)
+	at org.eclipse.persistence.descriptors.DescriptorEventManager.notifyListener(DescriptorEventManager.java:748)
+	at org.eclipse.persistence.descriptors.DescriptorEventManager.notifyEJB30Listeners(DescriptorEventManager.java:691)
+	at org.eclipse.persistence.descriptors.DescriptorEventManager.executeEvent(DescriptorEventManager.java:229)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.registerNewObjectClone(UnitOfWorkImpl.java:4316)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.registerNotRegisteredNewObjectForPersist(UnitOfWorkImpl.java:4293)
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.registerNotRegisteredNewObjectForPersist(RepeatableWriteUnitOfWork.java:518)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.registerNewObjectForPersist(UnitOfWorkImpl.java:4235)
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.persist(EntityManagerImpl.java:496)
+	at Entity.ValidatorTest.EmployeeValidationTest.persistirEmployeeInvalido(EmployeeValidationTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+
+</system-err>
+  </testcase>
+  <testcase classname="Entity.ValidatorTest.EmployeeValidationTest" name="atualizarEmployeeInvalido" time="0.006">
+    <error message="Unexpected exception, expected&lt;javax.validation.ConstraintViolationException&gt; but was&lt;javax.validation.UnexpectedTypeException&gt;" type="java.lang.Exception">java.lang.Exception: Unexpected exception, expected&lt;javax.validation.ConstraintViolationException&gt; but was&lt;javax.validation.UnexpectedTypeException&gt;
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:28)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: javax.validation.UnexpectedTypeException: HV000030: No validator could be found for type: Entity.Enum.StatusUser.
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintValidatorManager.verifyResolveWasUnique(ConstraintValidatorManager.java:218)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintValidatorManager.findMatchingValidatorClass(ConstraintValidatorManager.java:193)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintValidatorManager.getInitializedValidator(ConstraintValidatorManager.java:97)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:125)
+	at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintTree.validateConstraints(ConstraintTree.java:91)
+	at org.hibernate.validator.internal.metadata.core.MetaConstraint.validateConstraint(MetaConstraint.java:83)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraint(ValidatorImpl.java:547)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForDefaultGroup(ValidatorImpl.java:487)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateConstraintsForCurrentGroup(ValidatorImpl.java:451)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validateInContext(ValidatorImpl.java:403)
+	at org.hibernate.validator.internal.engine.ValidatorImpl.validate(ValidatorImpl.java:206)
+	at org.eclipse.persistence.internal.jpa.metadata.listeners.BeanValidationListener.validateOnCallbackEvent(BeanValidationListener.java:84)
+	at org.eclipse.persistence.internal.jpa.metadata.listeners.BeanValidationListener.preUpdate(BeanValidationListener.java:72)
+	at org.eclipse.persistence.descriptors.DescriptorEventManager.notifyListener(DescriptorEventManager.java:721)
+	at org.eclipse.persistence.descriptors.DescriptorEventManager.notifyEJB30Listeners(DescriptorEventManager.java:691)
+	at org.eclipse.persistence.descriptors.DescriptorEventManager.executeEvent(DescriptorEventManager.java:229)
+	at org.eclipse.persistence.descriptors.changetracking.DeferredChangeDetectionPolicy.calculateChanges(DeferredChangeDetectionPolicy.java:87)
+	at org.eclipse.persistence.descriptors.changetracking.DeferredChangeDetectionPolicy.calculateChangesForExistingObject(DeferredChangeDetectionPolicy.java:56)
+	at org.eclipse.persistence.internal.sessions.UnitOfWorkImpl.calculateChanges(UnitOfWorkImpl.java:664)
+	at org.eclipse.persistence.internal.sessions.RepeatableWriteUnitOfWork.writeChanges(RepeatableWriteUnitOfWork.java:438)
+	at org.eclipse.persistence.internal.jpa.EntityManagerImpl.flush(EntityManagerImpl.java:863)
+	at Entity.ValidatorTest.EmployeeValidationTest.atualizarEmployeeInvalido(EmployeeValidationTest.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	... 25 more
+</error>
+    <system-out>[EL Fine]: sql: 2019-11-24 15:26:06.971--ServerSession(664232848)--Connection(67573741)--Thread(Thread[main,5,main])--SELECT t0.ID, t0.DISC_USER, t0.email, t0.login, t0.name, t0.password, t0.status, t0.type, t1.ID_USER, t1.CPF FROM TB_USER t0, TB_EMPLOYEE t1 WHERE (t1.CPF LIKE ? AND ((t1.ID_USER = t0.ID) AND (t0.DISC_USER = ?)))
+	bind =&gt; [845.564.180-03, E]
+</system-out>
+  </testcase>
 </testsuite>
