@@ -1,2 +1,2 @@
-# Ductum-V1
+# ManagerSprintPlanDB
  Maven project
