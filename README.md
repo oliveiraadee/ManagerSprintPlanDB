@@ -1,2 +1,2 @@
-# ManagerSprintPlanDB
+# Manager Sprint Plan DB
  Maven project
